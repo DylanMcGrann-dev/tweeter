@@ -15,9 +15,53 @@ html {
  */
 
 body {
+  position: relative;
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro',sans-serif;
   font-size: 24px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #ebe8cc;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+}
+.divMain {
+  text-align: center;
+  width: 90%;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tweetDiv {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  color: white;
+  background-color: #4056A1;
+  font-family: 'Bungee', cursive;
+}
+textarea {
+  background-color: transparent;
+  resize: none;
+  outline: 0;
+  border-width: 0 0 4px;
+  border-color: rgb(5, 5, 5);
+  margin-bottom: 8px;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-weight: 300;
+}
+output {
+  font-family: 'Bungee', cursive;
+}
+label {
+  font-family: 'Source Sans Pro',sans-serif;
+  display: flex;
+  font-weight: 600;
 }
 
 /*
