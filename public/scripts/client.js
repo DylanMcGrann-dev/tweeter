@@ -29,7 +29,7 @@ $(document).ready(function(){
     },
     "created_at": 1461113959088
   }
-  ]
+  ];
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
@@ -43,8 +43,9 @@ $(document).ready(function(){
   // takes in a tweet object and is responsible for returning a tweet <article>
   const createTweetElement = function(object){
     const date = new Date(object.created_at);
-    let $tweet = $(`<article class="tweet">
-    <header class="tweet"><h3><img src="${object.user.avatars}">${object.user.name}</h3><h3 class="lastName">${object.user.handle}</h3></header>
+    let $tweet = $(
+      `<article class="tweet">
+        <header class="tweet"><h3><img src="${object.user.avatars}">${object.user.name}</h3><h3 class="lastName">${object.user.handle}</h3></header>
     <div class="content">${object.content.text}</div>
     <footer class="tweet"><span class="Date tweet"><time class="timeago" datetime="${date.toISOString()}">${date.toISOString()}</time>
     </span><span class="tweet icon"><i class="fas fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></span></footer>
@@ -53,8 +54,6 @@ $(document).ready(function(){
   };
   // const $tweet = createTweetElement(tweetData);
 renderTweets(tweetData);
-  
-
 
 });
 
