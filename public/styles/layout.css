@@ -26,6 +26,7 @@ main {
   justify-content: center;
   background-color: #ebe8cc;
   background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+  
 }
 .divMain {
   text-align: center;
@@ -82,6 +83,7 @@ header.tweet {
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
+  margin-top: revert;
 }
 div.content {
   border-bottom: solid;
