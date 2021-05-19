@@ -7,6 +7,9 @@ nav {
   height: 120px;
   padding: 1.5em;
   z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .spanTitle {
   font-family: 'Bungee', cursive;
