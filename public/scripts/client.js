@@ -53,7 +53,17 @@ $(document).ready(function(){
     return $tweet; 
   };
   // const $tweet = createTweetElement(tweetData);
-renderTweets(tweetData);
+  renderTweets(tweetData);
 
+  //prevents default form submission behaviour.
+  $( "#target" ).submit(function( event ) {
+    event.preventDefault();
+  $.ajax({
+    method: "POST",
+    url: "/tweets",
+    data: $( this ).serialize()
+  });
+  });
+  
 });
 
