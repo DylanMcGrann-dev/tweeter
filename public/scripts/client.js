@@ -35,19 +35,33 @@ $(document).ready(function(){
   //then sends a ajax post to /tweets
   $( "#target" ).submit(function( event ) {
     event.preventDefault();
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $( this ).serialize()
-    })
-    .then(function() {
-      loadTweets();
-    });
+    let value = $("#tweet-text").val();
+    if (value.length < 1) {
+      alert("You gotta say something!");
+    } else if (value.length > 140) {
+      alert("Maybe don't say that much");
+    } else if (value.length > 0 && value.length < 141) {
+
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: $( this ).serialize()
+      })
+      .then(function() {
+        $.getJSON('/tweets',function(result) {
+          let newTweet = result.length - 1;
+          let $tweet = createTweetElement(result[newTweet]);
+          $('#tweets-container').prepend($tweet);
+          $("time.timeago").timeago();
+        });
+        
+      });
+    }
+    
   });
-  
+  //
   const loadTweets = function() {
     $.getJSON('/tweets',function(result) {
-      console.log(result);
       renderTweets(result);
     });
   }
