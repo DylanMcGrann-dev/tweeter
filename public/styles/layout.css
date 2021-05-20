@@ -133,7 +133,6 @@ i:hover {
   color: red;
   height: 45px;
   align-items: center;
-  display: none;
 }
 .error2 {
   display: flex;
@@ -146,7 +145,6 @@ i:hover {
   color: red;
   height: 45px;
   align-items: center;
-  display: none;
 }
 .warningIcon {
   color: red;

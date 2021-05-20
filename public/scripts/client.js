@@ -6,6 +6,8 @@
 
 
 $(document).ready(function(){
+  $("#one").hide();
+  $("#two").hide();
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and preppends it to the tweets container
@@ -61,11 +63,12 @@ $(document).ready(function(){
       event.preventDefault();
       let value = $("#tweet-text").val();
       if (value.length < 1) {
-        document.getElementById("one").style.display = "block";
+        $("#one").slideDown("slow");
       } else if (value.length > 140) {
-        document.getElementById("two").style.display = "block";
+        $("#two").slideDown();
       } else if (value.length > 0 && value.length < 141) {
-        
+        $("#one").slideUp();
+        $("#two").slideUp();
         $.ajax({
         method: "POST",
         url: "/tweets",
