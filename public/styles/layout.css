@@ -24,7 +24,7 @@ body {
 main {
   display: flex;
   justify-content: center;
-  background-color: #ebe8cc;
+  background-color: #ebe8ccd8;
   background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
 }
 .divMain {
@@ -120,6 +120,35 @@ span.icon {
   width: 125px;
 }
 i:hover {
+  color: red;
+}
+.error1 {
+  display: flex;
+  border: solid;
+  justify-content: space-evenly;
+  border-color: red;
+  border-radius: 8px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: red;
+  height: 45px;
+  align-items: center;
+  display: none;
+}
+.error2 {
+  display: flex;
+  border: solid;
+  justify-content: space-evenly;
+  border-color: red;
+  border-radius: 8px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: red;
+  height: 45px;
+  align-items: center;
+  display: none;
+}
+.warningIcon {
   color: red;
 }
 /*

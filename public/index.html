@@ -35,13 +35,13 @@
       </span>
          
     </nav>
-    <header>
+    <header class="background">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Sarah Marshall</h2>
+          <h2 class="lettering">Sarah Marshall</h2>
       </div>
   </header>
 
@@ -50,6 +50,8 @@
       <div class="divMain">
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
+          <P class="error1" id="one"><i class="fas fa-exclamation warningIcon"></i>don't be shy say something!<i class="fas fa-exclamation warningIcon"></i></P>
+          <P class="error2" id="two"><i class="fas fa-exclamation warningIcon"></i>Okay maybe don't say so much<i class="fas fa-exclamation warningIcon"></i></P>
           <form method="POST" action="/tweets" id="target">
             <label for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
@@ -65,5 +67,8 @@
       </div>
 
     </main>
+    <script>
+       
+    </script>
   </body>
 </html>
