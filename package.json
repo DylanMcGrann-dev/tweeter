@@ -18,6 +18,9 @@
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.2",
     "nodemon": "^1.9.2"
   }
 }
