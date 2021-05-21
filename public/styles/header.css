@@ -1,14 +1,19 @@
-header {
+.mainHeader {
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 120px;
+  margin-bottom: 65px;
 }
 .lettering {
   color: whitesmoke;
 }
 .background {
   background-color:  #4056A1;
+}
+.profileImg {
+  position: relative;
+  top: 15px;
 }

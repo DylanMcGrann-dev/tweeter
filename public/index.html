@@ -21,10 +21,11 @@
     <!-- <script src="dist/timeago.js" type="text/javascript"></script> -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!--disable viewport zoom-->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
     <nav>
       <span class="spanTitle">tweeter</span>
       <span class="spanContent">
@@ -32,24 +33,22 @@
           <strong>write</strong> a new tweet 
         </div>
         <i class="fas fa-angle-double-down DD"></i>
-      </span>
-         
+      </span> 
     </nav>
-    <header class="background">
-      <div>
+    <header class="background mainHeader">
+      <div class="profileImg">
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
           <h2 class="lettering">Sarah Marshall</h2>
       </div>
-  </header>
+    </header>
 
-    <!-- Page-specific (main) content here -->
+    <!-- Page-specific content here -->
     <main class="container">
       <div class="divMain">
         <section class="new-tweet">
-          <h2>Compose Tweet</h2>
           <P class="error1" id="one"><i class="fas fa-exclamation warningIcon"></i>don't be shy say something!<i class="fas fa-exclamation warningIcon"></i></P>
           <P class="error2" id="two"><i class="fas fa-exclamation warningIcon"></i>Okay maybe don't say so much<i class="fas fa-exclamation warningIcon"></i></P>
           <form method="POST" action="/tweets" id="target">
@@ -63,12 +62,7 @@
           </article>
            <section id="tweets-container"></section>
         </section>
-       
       </div>
-
     </main>
-    <script>
-       
-    </script>
   </body>
 </html>

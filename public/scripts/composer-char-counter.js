@@ -11,5 +11,4 @@ $(document).ready(function() {
       $(this).siblings().children(".counter").css("color", "rgb(63, 61, 61)");
     }
   });
-  // --- our code goes here ---
 });

@@ -1,8 +1,4 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
+
 html {
   box-sizing: border-box;
 }
@@ -10,26 +6,19 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
+  display: flex;
+  flex-direction: column;
   position: relative;
   color: #545149;
-  background-color: #f4f1ec;
   font-family: 'Source Sans Pro',sans-serif;
   font-size: 24px;
+  background-color: #ebe8cca7;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
 }
 main {
   display: flex;
   justify-content: center;
-  background-color: #ebe8ccd8;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
-}
-.divMain {
-  text-align: center;
-  width: 90%;
 }
 form {
   display: flex;
@@ -37,14 +26,19 @@ form {
   flex-direction: column;
   margin-bottom: 40px;
 }
-.tweetDiv {
-  display: flex;
-  justify-content: space-between;
-}
 button {
   color: white;
   background-color: #4056A1;
   font-family: 'Bungee', cursive;
+}
+output {
+  color: rgb(63, 61, 61);
+  font-family: 'Bungee', cursive;
+}
+label {
+  font-family: 'Source Sans Pro',sans-serif;
+  display: flex;
+  font-weight: 600;
 }
 textarea {
   background-color: transparent;
@@ -57,15 +51,7 @@ textarea {
   font-weight: 600;
   color: #4056A1;
 }
-output {
-  color: rgb(63, 61, 61);
-  font-family: 'Bungee', cursive;
-}
-label {
-  font-family: 'Source Sans Pro',sans-serif;
-  display: flex;
-  font-weight: 600;
-}
+
 article.tweet {
   border: black;
   display: flex;
@@ -75,7 +61,7 @@ article.tweet {
   padding: 1em;
 }
 article.tweet:hover {
-  box-shadow: 10px 5px 11px olivedrab;
+  box-shadow: 10px 5px 11px rgb(90, 121, 28);
 }
 header.tweet {
   display: flex;
@@ -95,9 +81,6 @@ div.content {
   font-family: 'Source Sans Pro',sans-serif;
   color: #4056A1;
   font-weight: 600;
-}
-h3.lastName {
-  color: olivedrab;
 }
 footer.tweet {
   display: flex;
@@ -121,6 +104,19 @@ span.icon {
 }
 i:hover {
   color: red;
+}
+.divMain {
+  text-align: center;
+  width: 90%;
+}
+.tweetDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.lastName {
+  color: rgb(90, 121, 28);
+  font-family: 'Source Sans Pro',sans-serif;
+  font-weight: 600;
 }
 .error1 {
   display: flex;
@@ -148,6 +144,21 @@ i:hover {
 }
 .warningIcon {
   color: red;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main {
+    margin-top: 250px;
+  }
+  .mainHeader {
+    width: 40vw;
+    position: relative;
+    top: 10vw;
+  }
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
