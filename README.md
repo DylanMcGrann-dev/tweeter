@@ -17,6 +17,6 @@ Tweeter is a simple, single-page Twitter clone.
 - Node 5.10.x or above
 
 ## Screen Shots
-(https://github.com/DylanMcGrann-dev/tweeter/blob/master/docs/home%20full%20screen.png)
-(https://github.com/DylanMcGrann-dev/tweeter/blob/master/docs/say%20less.png)
-(https://github.com/DylanMcGrann-dev/tweeter/blob/master/docs/say%20more.png)
+!["home screen"](https://github.com/DylanMcGrann-dev/tweeter/blob/master/docs/home%20full%20screen.png)
+!["reduced screen size"](https://github.com/DylanMcGrann-dev/tweeter/blob/master/docs/say%20less.png)
+!["smallest screen size"](https://github.com/DylanMcGrann-dev/tweeter/blob/master/docs/say%20more.png)
